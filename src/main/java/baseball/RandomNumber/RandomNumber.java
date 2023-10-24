@@ -13,7 +13,7 @@ public class RandomNumber {
                 computer.add(randomNumber);
             }
         }
-        int generatorNumber = computer.get(0)*100 + computer.get(1)*100+computer.get(2)*100;
+        int generatorNumber = computer.get(0)*100 + computer.get(1)*10+computer.get(2);
         return generatorNumber;
     }
 
