@@ -12,6 +12,7 @@
 3. 사용자에게 중복되지 않는 숫자를 입출력받는 기능
     1. `public void RequestInputNumber(){    System.*out*.println("숫자를 입력해주세요 : ");}`
     2. (1~9이외에 다른 입력 → IllegalArgumentException)
+        1. `public int Check_Number() {`
 4. 난수와 입력받은 수를 비교해 카운팅을 하는 기능 
     1. 컴퓨터의 수가 425일 때
         1. 123일 경우 1스트라이크

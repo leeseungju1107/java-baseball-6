@@ -6,18 +6,19 @@ public class UserNumber {
         String User_Input_Number = Console.readLine();
         return User_Input_Number;
     }
-    public int Change_Number(){
-        String UserInput = String_Number();
-        int Integer_Number;
-        Integer_Number = Integer.parseInt(UserInput);
-        return Integer_Number;
-    }
-    public void Check_Number(){
-        int Final_Number = Change_Number();
-        if(Final_Number < 100 || Final_Number > 1000){
-            throw new IllegalArgumentException();
+    public int Check_Number() {
+        String checkNumber = String_Number();
+        if (checkNumber.length() != 3) {
+            throw new IllegalArgumentException("애플리케이션 종료");
         }
+        char[] final_Check_Numbers = String_Number().toCharArray();
+        for (char final_Check_Number : final_Check_Numbers) {
+            int num = Character.getNumericValue(final_Check_Number);
+            if (num < 1 || num > 9) {
+                throw new IllegalArgumentException("애플리케이션 종료");
+            }
+        }
+        int RealNumber = Integer.parseInt(checkNumber);
+        return RealNumber;
     }
-
 }
-
