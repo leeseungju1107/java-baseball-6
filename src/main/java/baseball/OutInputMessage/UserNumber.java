@@ -3,6 +3,7 @@ import camp.nextstep.edu.missionutils.Console;
 
 public class UserNumber {
     public String String_Number(){
+        System.out.print("숫자를 입력해주세요 : ");
         String User_Input_Number = Console.readLine();
         return User_Input_Number;
     }
