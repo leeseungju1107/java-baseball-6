@@ -6,6 +6,10 @@ public class UserNumber {
         String User_Input_Number = Console.readLine();
         return User_Input_Number;
     }
+    public String Restart_Number(){
+        String restart_number = Console.readLine();
+        return restart_number;
+    }
     public int Check_Number() {
         String checkNumber = String_Number();
         if (checkNumber.length() != 3) {
