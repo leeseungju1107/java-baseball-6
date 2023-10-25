@@ -12,13 +12,13 @@ public class Control {
             UserNumber userNumberInput = new UserNumber();
             int userNumber = userNumberInput.Check_Number();
             calculator gameCalculator = new calculator();
-            String resultMessage = gameCalculator.CountingBaseball();
+            String resultMessage = gameCalculator.CountingBaseball(userNumber);
             System.out.println(resultMessage);
 
             if (resultMessage.contains("3스트라이크")) {
                 System.out.println(resultMessage);
                 outmessage.Re_Request();
-                String restartChoice = userNumberInput.Restart_Number();
+                String restartChoice = userNumberInput.Restart_Game();
                 if (restartChoice.equals("1")) {
                     continue;  // 게임 재시작
                 } else if (restartChoice.equals("2")) {
